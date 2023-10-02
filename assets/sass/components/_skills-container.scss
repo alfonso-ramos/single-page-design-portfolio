@@ -1,0 +1,47 @@
+@import "../variables";
+.presentation-container{
+    text-align: center;
+}
+.skills-comtaiener{
+    display: grid;
+    color: white;
+    font-weight: bold;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 18rem);
+    gap: 2rem;
+    .skill-1{
+        border-radius: 0.8rem;
+        background-color: $purple;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .skill-2{
+        border-radius: 0.8rem;
+        background-color: $orange;
+    }
+    .skill-3{
+        border-radius: 0.8rem;
+        background-color: $pink;
+    }
+    .skill-4{
+        border-radius: 0.8rem;
+        background-color: $red;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .skill-5{
+        border-radius: 0.8rem;
+        background-color: $turquoise;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .skill-6{
+        border-radius: 0.8rem;
+        background-color: $dark-pruple;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+}

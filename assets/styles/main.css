@@ -1,0 +1,134 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #FFF7F0;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+/* Globales */
+.container {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 2.6rem;
+}
+
+h1 {
+  font-size: 3.6rem;
+  line-height: 4.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Utilities */
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn-shape {
+  color: white;
+  font-weight: bold;
+  height: 4.4rem;
+  width: 17.6rem;
+  border-radius: 2.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header .btn-shape {
+  background-color: #030303;
+}
+
+.presentation-container {
+  text-align: center;
+}
+
+.skills-comtaiener {
+  display: grid;
+  color: white;
+  font-weight: bold;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 18rem);
+  gap: 2rem;
+}
+.skills-comtaiener .skill-1 {
+  border-radius: 0.8rem;
+  background-color: #755CDE;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.skills-comtaiener .skill-2 {
+  border-radius: 0.8rem;
+  background-color: #F6A560;
+}
+.skills-comtaiener .skill-3 {
+  border-radius: 0.8rem;
+  background-color: #F39E9E;
+}
+.skills-comtaiener .skill-4 {
+  border-radius: 0.8rem;
+  background-color: #EB7565;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.skills-comtaiener .skill-5 {
+  border-radius: 0.8rem;
+  background-color: #61C4B7;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.skills-comtaiener .skill-6 {
+  border-radius: 0.8rem;
+  background-color: #552049;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/*# sourceMappingURL=main.css.map */
