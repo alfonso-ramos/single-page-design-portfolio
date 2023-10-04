@@ -93,7 +93,7 @@ header .btn-shape {
   color: white;
   font-weight: bold;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(6, 18rem);
+  grid-template-rows: repeat(6, 15.8rem);
   gap: 2rem;
 }
 .skills-comtaiener .skill-1 {
@@ -129,6 +129,44 @@ header .btn-shape {
   background-color: #552049;
   grid-column-start: 1;
   grid-column-end: 3;
+}
+
+.amy-section .btn-shape {
+  background-color: #EB7565;
+}
+
+#scrolling-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: auto;
+  gap: 1.5rem;
+  scroll-behavior: smooth;
+}
+#scrolling-container img {
+  height: 18rem;
+  width: 27rem;
+  border-radius: 1rem;
+}
+#scrolling-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scrolling-buttons-container {
+  height: 7rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  margin-top: 3.2rem;
+}
+.scrolling-buttons-container span {
+  width: 6.4rem;
+  height: 6.4rem;
+  padding: 2.4rem;
+  border-radius: 100%;
+  background-color: black;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=main.css.map */

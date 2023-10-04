@@ -1,0 +1,5 @@
+.amy-section{
+    .btn-shape {
+        @include btn-color($red)
+    }
+}
