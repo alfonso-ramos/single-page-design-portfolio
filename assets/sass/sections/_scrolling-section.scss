@@ -1,26 +1,35 @@
-#scrolling-container{
+#scrolling-container {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
     overflow: auto;
     gap: 1.5rem;
     scroll-behavior: smooth;
-    img{
+
+    img {
         height: 18rem;
         width: 27rem;
         border-radius: 1rem;
+
+        @include tablet {
+            height: 36rem;
+            width: 282rem;
+        }
     }
-    &::-webkit-scrollbar{
+
+    &::-webkit-scrollbar {
         display: none;
     }
 }
-.scrolling-buttons-container{
+
+.scrolling-buttons-container {
     height: 7rem;
     width: 90%;
     display: flex;
     justify-content: center;
     gap: 1.6rem;
     margin-top: 3.2rem;
+
     span {
         width: 6.4rem;
         height: 6.4rem;
@@ -28,5 +37,9 @@
         border-radius: 100%;
         background-color: black;
         display: inline-block;
+    }
+    span:hover{
+        background-color: $purple;
+        transition: 200ms;
     }
 }

@@ -76,6 +76,10 @@ header nav {
 header .btn-shape {
   background-color: #030303;
 }
+header .btn-shape:hover {
+  background-color: #755CDE;
+  transition: 200ms;
+}
 
 .presentation-container {
   text-align: center;
@@ -89,6 +93,18 @@ header .btn-shape {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, 15.8rem);
   gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .skills-comtaiener {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 15.8rem);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .skills-comtaiener {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 15.8rem);
+  }
 }
 .skills-comtaiener .skill-1 {
   border-radius: 0.8rem;
@@ -112,17 +128,43 @@ header .btn-shape {
   grid-column-start: 1;
   grid-column-end: 3;
 }
+@media screen and (min-width: 768px) {
+  .skills-comtaiener .skill-4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
 .skills-comtaiener .skill-5 {
   border-radius: 0.8rem;
   background-color: #61C4B7;
   grid-column-start: 1;
   grid-column-end: 3;
 }
+@media screen and (min-width: 1024px) {
+  .skills-comtaiener .skill-5 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+  }
+}
 .skills-comtaiener .skill-6 {
   border-radius: 0.8rem;
   background-color: #552049;
   grid-column-start: 1;
   grid-column-end: 3;
+}
+@media screen and (min-width: 768px) {
+  .skills-comtaiener .skill-6 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .skills-comtaiener .skill-6 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+  }
 }
 
 .amy-section {
@@ -139,6 +181,26 @@ header .btn-shape {
   background-color: #EB7565;
   margin-top: 2.4rem;
 }
+.amy-section .btn-shape:hover {
+  background-color: #F6A560;
+  transition: 200ms;
+}
+@media screen and (min-width: 768px) {
+  .amy-section {
+    flex-direction: row;
+    gap: 7rem;
+  }
+  .amy-section .amy-text-container {
+    width: 33.9rem;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .amy-section img {
+    width: 36.4rem;
+    height: 36.4rem;
+  }
+}
 
 #scrolling-container {
   display: flex;
@@ -152,6 +214,12 @@ header .btn-shape {
   height: 18rem;
   width: 27rem;
   border-radius: 1rem;
+}
+@media screen and (min-width: 768px) {
+  #scrolling-container img {
+    height: 36rem;
+    width: 282rem;
+  }
 }
 #scrolling-container::-webkit-scrollbar {
   display: none;
@@ -173,6 +241,10 @@ header .btn-shape {
   background-color: black;
   display: inline-block;
 }
+.scrolling-buttons-container span:hover {
+  background-color: #755CDE;
+  transition: 200ms;
+}
 
 .booking-container {
   color: white;
@@ -186,8 +258,23 @@ header .btn-shape {
   text-align: center;
   margin-top: 10rem;
 }
+@media screen and (min-width: 1024px) {
+  .booking-container {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    gap: 18rem;
+  }
+}
 .booking-container .btn-shape {
   background-color: #EB7565;
+}
+.booking-container .btn-shape:hover {
+  background-color: #F6A560;
+  transition: 200ms;
+}
+.booking-container h2 {
+  margin: 0;
 }
 
 footer {
@@ -199,6 +286,10 @@ footer nav {
 }
 footer .btn-shape {
   background-color: #030303;
+}
+footer .btn-shape:hover {
+  background-color: #755CDE;
+  transition: 200ms;
 }
 
 /*# sourceMappingURL=main.css.map */

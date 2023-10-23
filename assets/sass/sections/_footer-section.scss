@@ -5,6 +5,10 @@ footer{
         justify-content: space-between;
     }
     .btn-shape {
-        @include btn-color($black)
+        @include btn-color($black);
+        &:hover{
+            background-color: $purple;
+            transition: 200ms;
+        }
     }
 }

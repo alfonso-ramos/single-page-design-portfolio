@@ -1,8 +1,10 @@
 @import "../variables";
-.presentation-container{
+
+.presentation-container {
     text-align: center;
 }
-.skills-comtaiener{
+
+.skills-comtaiener {
     margin-top: 3.2rem;
     display: grid;
     color: white;
@@ -10,7 +12,18 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 15.8rem);
     gap: 2rem;
-    .skill-1{
+
+    @include tablet {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 15.8rem);
+    }
+
+    @include desktop {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 15.8rem);
+    }
+
+    .skill-1 {
         border-radius: 0.8rem;
         background-color: $purple;
         grid-column-start: 1;
@@ -18,31 +31,57 @@
         grid-row-start: 1;
         grid-row-end: 3;
     }
-    .skill-2{
+
+    .skill-2 {
         border-radius: 0.8rem;
         background-color: $orange;
     }
-    .skill-3{
+
+    .skill-3 {
         border-radius: 0.8rem;
         background-color: $pink;
     }
-    .skill-4{
+
+    .skill-4 {
         border-radius: 0.8rem;
         background-color: $red;
         grid-column-start: 1;
         grid-column-end: 3;
+
+        @include tablet {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
     }
-    .skill-5{
+
+    .skill-5 {
         border-radius: 0.8rem;
         background-color: $turquoise;
         grid-column-start: 1;
         grid-column-end: 3;
+
+        @include desktop {
+            grid-column-start: 5;
+            grid-column-end: 7;
+        }
     }
-    .skill-6{
+
+    .skill-6 {
         border-radius: 0.8rem;
         background-color: $dark-pruple;
         grid-column-start: 1;
         grid-column-end: 3;
+
+        @include tablet {
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+        @include desktop {
+            grid-column-start: 5;
+            grid-column-end: 7;
+        }
     }
-    
+
 }

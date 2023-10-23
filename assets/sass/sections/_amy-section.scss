@@ -10,6 +10,23 @@
     .btn-shape {
         @include btn-color($red);
         margin-top: 2.4rem;
-
+        &:hover{
+            background-color: $orange;
+            transition: 200ms;
+        }
+    }
+    @include tablet{
+        flex-direction: row;
+        gap: 7rem;
+        .amy-text-container{
+            width: 33.9rem;
+            text-align: left;
+        }
+    }
+    img{
+        @include tablet{
+            width: 36.4rem;
+            height: 36.4rem;
+        }
     }
 }
