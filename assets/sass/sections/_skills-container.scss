@@ -22,6 +22,20 @@
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(2, 15.8rem);
     }
+    .skill-card{
+        display: flex;
+        flex-direction: column;
+        padding: 2.4rem;
+        font-weight: bold;
+        font-size: 2.4rem;
+    }
+    .skill-title{
+        justify-self: end;
+    }
+
+    .skill-icon{
+        align-self: end;
+    }
 
     .skill-1 {
         border-radius: 0.8rem;
@@ -30,16 +44,28 @@
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 3;
+        img{
+            width: 12.8rem;
+            height: 19.2rem;
+        }
     }
 
     .skill-2 {
         border-radius: 0.8rem;
         background-color: $orange;
+        img{
+            width: 6.4rem;
+            height: 6.4rem;
+        }
     }
 
     .skill-3 {
         border-radius: 0.8rem;
         background-color: $pink;
+        img{
+            width: 6.4rem;
+            height: 6.4rem;
+        }
     }
 
     .skill-4 {
@@ -47,6 +73,10 @@
         background-color: $red;
         grid-column-start: 1;
         grid-column-end: 3;
+        img{
+            width: 12.8rem;
+            height: 6.4rem;
+        }
 
         @include tablet {
             grid-column-start: 3;
@@ -61,6 +91,10 @@
         background-color: $turquoise;
         grid-column-start: 1;
         grid-column-end: 3;
+        img{
+            width: 16rem;
+            height: 6.4rem;
+        }
 
         @include desktop {
             grid-column-start: 5;
@@ -73,6 +107,10 @@
         background-color: $dark-pruple;
         grid-column-start: 1;
         grid-column-end: 3;
+        img{
+            width: 12.8rem;
+            height: 6.4rem;
+        }
 
         @include tablet {
             grid-column-start: 3;

@@ -1,10 +1,11 @@
 @import "variables";
-@import "globals";
 @import "mixins";
+@import "globals";
 
 @import "sections/header";
 @import "sections/skills-container";
 @import "sections/amy-section";
 @import "sections/scrolling-section";
 @import "sections/booking-container";
-@import "sections/footer-section"
+@import "sections/footer-section";
+@import "sections/presentation-section"

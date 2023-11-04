@@ -17,6 +17,7 @@
     }
     .btn-shape {
         @include btn-color($red);
+        margin-top: 2.4rem ;
         &:hover{
             background-color: $orange;
             transition: 200ms;

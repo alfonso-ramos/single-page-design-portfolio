@@ -22,17 +22,16 @@
     <title>Frontend Mentor | Single-page design portfolio</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="/">
-          <img src="assets/icons/logo.svg" alt="logo" />
-        </a>
-
-        <a href="/" class="btn-shape"> Free Consultation </a>
-      </nav>
-    </header>
-
     <div class="container">
+      <header>
+        <nav>
+          <a href="/">
+            <img src="assets/icons/logo.svg" alt="logo" class="logo-img" />
+          </a>
+
+          <a href="/" class="btn-shape"> Free Consultation </a>
+        </nav>
+      </header>
       <section>
         <div class="presentation-container">
           <h1>Design solutions made easy</h1>
@@ -44,7 +43,7 @@
         </div>
 
         <div class="skills-comtaiener">
-          <div class="skill-1">
+          <div class="skill-card skill-1">
             <img
               src="assets/icons/pattern-graphic-design.svg"
               alt=""
@@ -52,25 +51,45 @@
             />
             <p class="skill-title">Graphic Design</p>
           </div>
-          <div class="skill-2">
-            <img src="assets/icons/pattern-ui-ux.svg" alt="" />
-            <p>UI/UX</p>
+          <div class="skill-card skill-2">
+            <img
+              src="assets/icons/pattern-ui-ux.svg"
+              alt=""
+              class="skill-icon"
+            />
+            <p class="skill-title">UI/UX</p>
           </div>
-          <div class="skill-3">
-            <img src="assets/icons/pattern-apps.svg" alt="" />
-            <p>Apps</p>
+          <div class="skill-card skill-3">
+            <img
+              src="assets/icons/pattern-apps.svg"
+              alt=""
+              class="skill-icon"
+            />
+            <p class="skill-title">Apps</p>
           </div>
-          <div class="skill-4">
-            <img src="assets/icons/pattern-illustrations.svg" alt="" />
-            <p>Illustrations</p>
+          <div class="skill-card skill-4">
+            <img
+              src="assets/icons/pattern-illustrations.svg"
+              alt=""
+              class="skill-icon"
+            />
+            <p class="skill-title">Illustrations</p>
           </div>
-          <div class="skill-5">
-            <img src="assets/icons/pattern-photography.svg" alt="" />
-            <p>Photography</p>
+          <div class="skill-card skill-5">
+            <img
+              src="assets/icons/pattern-photography.svg"
+              alt=""
+              class="skill-icon"
+            />
+            <p class="skill-title">Photography</p>
           </div>
-          <div class="skill-6">
-            <img src="assets/icons/pattern-motion-graphics.svg" alt="" />
-            <p>Motion Graphics</p>
+          <div class="skill-card skill-6">
+            <img
+              src="assets/icons/pattern-motion-graphics.svg"
+              alt=""
+              class="skill-icon"
+            />
+            <p class="skill-title">Motion Graphics</p>
           </div>
         </div>
       </section>
@@ -89,7 +108,7 @@
           <a href="/" class="btn-shape"> Free Consultation </a>
         </div>
       </section>
-      <section>
+      <section class="my-work-container">
         <h2>My Work</h2>
         <div id="scrolling-container">
           <img
@@ -143,17 +162,16 @@
           </div>
         </div>
       </section>
+      <footer>
+        <nav>
+          <a href="/">
+            <img src="assets/icons/logo.svg" alt="logo" class="logo-img" />
+          </a>
+
+          <a href="/" class="btn-shape"> Free Consultation </a>
+        </nav>
+      </footer>
     </div>
-
-    <footer>
-      <nav>
-        <a href="/">
-          <img src="assets/icons/logo.svg" alt="logo" />
-        </a>
-
-        <a href="/" class="btn-shape"> Free Consultation </a>
-      </nav>
-    </footer>
 
     <script src="assets/js/script.js"></script>
   </body>

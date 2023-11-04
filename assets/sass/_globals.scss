@@ -26,7 +26,9 @@ a{
     text-decoration: none;
 }
 p{
+    // font-size: 1.6rem;
     line-height: 2.6rem;
+    margin-bottom: 0;
 }
 h1{
     font-size: 3.6rem;
@@ -39,16 +41,11 @@ h2{
 img{
     max-width: 100%;
 }
-/* Utilities */
-.no-margin{
-    margin: 0;
+.logo-img{
+    width: 4.8rem;
+    height: 4.8rem;
 }
-.no-padding{
-    padding: 0;
-}
-.text-center{
-    text-align: center;
-}
+
 .btn-shape{
     color: white;
     font-weight: bold;

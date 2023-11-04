@@ -1,3 +1,9 @@
+.my-work-container{
+    h2{
+        margin:  0 auto;
+    }
+}
+
 #scrolling-container {
     display: flex;
     align-items: center;
@@ -38,7 +44,8 @@
         background-color: black;
         display: inline-block;
     }
-    span:hover{
+
+    span:hover {
         background-color: $purple;
         transition: 200ms;
     }

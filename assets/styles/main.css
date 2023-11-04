@@ -29,6 +29,7 @@ a {
 
 p {
   line-height: 2.6rem;
+  margin-bottom: 0;
 }
 
 h1 {
@@ -45,17 +46,9 @@ img {
   max-width: 100%;
 }
 
-/* Utilities */
-.no-margin {
-  margin: 0;
-}
-
-.no-padding {
-  padding: 0;
-}
-
-.text-center {
-  text-align: center;
+.logo-img {
+  width: 4.8rem;
+  height: 4.8rem;
 }
 
 .btn-shape {
@@ -72,6 +65,10 @@ img {
 header nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+header p {
+  color: #7A746E;
 }
 header .btn-shape {
   background-color: #030303;
@@ -106,6 +103,19 @@ header .btn-shape:hover {
     grid-template-rows: repeat(2, 15.8rem);
   }
 }
+.skills-comtaiener .skill-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2.4rem;
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+.skills-comtaiener .skill-title {
+  justify-self: end;
+}
+.skills-comtaiener .skill-icon {
+  align-self: end;
+}
 .skills-comtaiener .skill-1 {
   border-radius: 0.8rem;
   background-color: #755CDE;
@@ -114,19 +124,35 @@ header .btn-shape:hover {
   grid-row-start: 1;
   grid-row-end: 3;
 }
+.skills-comtaiener .skill-1 img {
+  width: 12.8rem;
+  height: 19.2rem;
+}
 .skills-comtaiener .skill-2 {
   border-radius: 0.8rem;
   background-color: #F6A560;
 }
+.skills-comtaiener .skill-2 img {
+  width: 6.4rem;
+  height: 6.4rem;
+}
 .skills-comtaiener .skill-3 {
   border-radius: 0.8rem;
   background-color: #F39E9E;
+}
+.skills-comtaiener .skill-3 img {
+  width: 6.4rem;
+  height: 6.4rem;
 }
 .skills-comtaiener .skill-4 {
   border-radius: 0.8rem;
   background-color: #EB7565;
   grid-column-start: 1;
   grid-column-end: 3;
+}
+.skills-comtaiener .skill-4 img {
+  width: 12.8rem;
+  height: 6.4rem;
 }
 @media screen and (min-width: 768px) {
   .skills-comtaiener .skill-4 {
@@ -142,6 +168,10 @@ header .btn-shape:hover {
   grid-column-start: 1;
   grid-column-end: 3;
 }
+.skills-comtaiener .skill-5 img {
+  width: 16rem;
+  height: 6.4rem;
+}
 @media screen and (min-width: 1024px) {
   .skills-comtaiener .skill-5 {
     grid-column-start: 5;
@@ -153,6 +183,10 @@ header .btn-shape:hover {
   background-color: #552049;
   grid-column-start: 1;
   grid-column-end: 3;
+}
+.skills-comtaiener .skill-6 img {
+  width: 12.8rem;
+  height: 6.4rem;
 }
 @media screen and (min-width: 768px) {
   .skills-comtaiener .skill-6 {
@@ -172,6 +206,7 @@ header .btn-shape:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
 }
 .amy-section p {
@@ -179,7 +214,7 @@ header .btn-shape:hover {
 }
 .amy-section .btn-shape {
   background-color: #EB7565;
-  margin-top: 2.4rem;
+  margin: 2.4rem auto;
 }
 .amy-section .btn-shape:hover {
   background-color: #F6A560;
@@ -188,11 +223,16 @@ header .btn-shape:hover {
 @media screen and (min-width: 768px) {
   .amy-section {
     flex-direction: row;
-    gap: 7rem;
+    gap: 6rem;
   }
   .amy-section .amy-text-container {
     width: 33.9rem;
     text-align: left;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .amy-section {
+    gap: 12rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -200,6 +240,16 @@ header .btn-shape:hover {
     width: 36.4rem;
     height: 36.4rem;
   }
+}
+@media screen and (min-width: 1024px) {
+  .amy-section img {
+    width: 44.5rem;
+    height: 44.5rem;
+  }
+}
+
+.my-work-container h2 {
+  margin: 0 auto;
 }
 
 #scrolling-container {
@@ -268,6 +318,7 @@ header .btn-shape:hover {
 }
 .booking-container .btn-shape {
   background-color: #EB7565;
+  margin-top: 2.4rem;
 }
 .booking-container .btn-shape:hover {
   background-color: #F6A560;
@@ -290,6 +341,14 @@ footer .btn-shape {
 footer .btn-shape:hover {
   background-color: #755CDE;
   transition: 200ms;
+}
+
+.presentation-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.presentation-container p {
+  color: #7A746E;
 }
 
 /*# sourceMappingURL=main.css.map */
